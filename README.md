@@ -33,6 +33,9 @@ when webpage open will show landing page , then click on the notes page button. 
 
 github :  https://github.com/omeraus6/NoteTakerEditor
 
+Deploy heroku page : https://limitless-castle-55287-92265f36f370.herokuapp.com/notes
+
+
 
 ![alt text](public/assets/images/1.png)
 image 1: landing page
