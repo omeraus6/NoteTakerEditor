@@ -1,43 +1,78 @@
 # NoteTakerEditor
 
-## Acceptance Criteria
 
-```
-GIVEN a note-taking application
-WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note title and the note’s text
-THEN a "Save Note" button and a "Clear Form" button appear in the navigation at the top of the page
-WHEN I click on the Save button
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes and the buttons in the navigation disappear
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column and a "New Note" button appears in the navigation
-WHEN I click on the "New Note" button in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column and the button disappears
-```
+## Table of Contents (Optional)
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
 
-## Getting Started
+## Description
 
-On the back end, the application should include a `db.json` file that will be used to store and retrieve notes using the `fs` module.
+I learn express and how to work with server , I learn how to test the code before I run it inside the project and how to coonect between server and index.js using res.get(),res.post() and fecth() ,I build this project to add , review and delete notes
 
-The following HTML routes should be created:
+- What problem does it solve?
+1- add landing page with a link to a notes page
+2- when user click on notes page button , it will show another page include empty text notes on the right side and list for exist notes on left side.
+3- when user click on text note , webpage will show save button on the right corner with clear button too
+4- when user click on save button , webpage will save it to jSON data and return,add it to the left-side-list
+5- when user click on an existing note, the old note will show on the right side
+6- when user click on a new note button , the text on the right side will clear it , so user can add another notes
 
-* `GET /notes` should return the `notes.html` file.
 
-* `GET *` should return the `index.html` file.
+## Installation
 
-The following API routes should be created:
+the project has two installation process one for (package.json) and it's install using this command in terminal "npm init"
+another process is (node_modules) 
 
-* `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
+## Usage
+when webpage open will show landing page , then click on the notes page button. the new page will show the page help to add , reviwe and delete notes 
 
-* `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
+github :  https://github.com/omeraus6/NoteTakerEditor
 
-## Bonus
 
-You haven’t learned how to handle DELETE requests, but this application offers that functionality on the front end. As a bonus, try to add the DELETE route to the application using the following guideline:
+![alt text](public/assets/images/1.png)
+image 1: landing page
 
-* `DELETE /api/notes/:id` should receive a query parameter that contains the id of a note to delete. To delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
+![alt text](public/assets/images/2.png)
+image 2: note taker page
+
+![alt text](public/assets/images/3.png)
+image 3: save "call back" note
+
+![alt text](public/assets/images/4.png)
+image 4: delete "hello" note
+
+![alt text](public/assets/images/5.png)
+image 5: server,js code
+
+![alt text](public/assets/images/6.png)
+image 6: Routes js files
+
+![alt text](public/assets/images/7.png)
+image 7: helper code
+
+![alt text](public/assets/images/8.png)
+image 8: 
+
+![alt text](public/assets/images/9.png)
+image 9: 
+
+![alt text](public/assets/images/10.png)
+image 10: image 8-10 : code
+
  
+
+
+
+
+## Credits
+
+Thank you for tips and sugestion from Bootcamp instructors and classmates, I hava used https://www.w3schools.com/ , https://stackoverflow.com/ and https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template to reserch information 
+
+## License
+
+Please refer to the LICENSE in the repo.

@@ -1,8 +1,5 @@
 const express = require('express');
-const api = require('./routes/indexRoute.js');
-
-//const htm = require('./routes/HTMLRoute.js');
-//const api = require('./routes/ApiRoute.js');
+const api = require('./routes/index.js');
 
 
 const PORT = process.env.PORT || 3001;
@@ -17,9 +14,6 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.use('/', api);
-//app.use('/api', api);
-
-
 
 
 app.listen(PORT, () =>
